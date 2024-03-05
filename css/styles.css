@@ -37,3 +37,7 @@ body{
     max-width: 60%;
     aspect-ratio: 4/5;
 }
+
+.small-images img:active{
+    outline: 10px solid red;
+}

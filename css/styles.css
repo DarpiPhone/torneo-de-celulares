@@ -90,3 +90,7 @@ body{
     font-size: 2vw;
     font-weight: bold;
 }
+.name-smartphone::selection{
+    background-color: #000000;
+    color: #ffffff;
+}

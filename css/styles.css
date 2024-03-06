@@ -15,7 +15,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    padding: 12vh 0 4vh 0;
+    padding: 11vh 0 4vh 0;
 }
 
 /* Estilo para las imagenes grandes */
@@ -30,9 +30,8 @@ body{
     max-width: 90vw;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
-    text-align: center;
+    row-gap: 2vh;
+    column-gap: 1vw;
 }
 
 /* Imagenes pequeñas */

@@ -4,12 +4,14 @@ const namesImgSmartphones = ["01.blackview-bl8000.jpg", "02.infinix-hot-40-pro-4
 
 function addNamesSmartphones(...args){
    for(let i = 0; i < args.length; i++){
-        const itemImg = document.createElement("img");
-        itemImg.src = `img-smartphones/${namesImgSmartphones[i]}`;
-        itemImg.alt = namesImgSmartphones[i];
-        itemImg.title = args.sort()[i];
+          const itemDiv = document.createElement("div");
+          const itemImg = document.createElement("img");
+          itemImg.src = `img-smartphones/${namesImgSmartphones[i]}`;
+          itemImg.alt = namesImgSmartphones[i];
+          itemImg.title = args.sort()[i];
 
-        itemImgSmartphones.append(itemImg);
+          itemDiv.append(itemImg);
+          itemImgSmartphones.append(itemDiv);
    }
     smallImages.append(itemImgSmartphones);
 }

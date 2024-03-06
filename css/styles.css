@@ -4,7 +4,7 @@ body{
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    height: 100%;
+    height: 100vh;
     background-image: url("https://raw.githubusercontent.com/Jappy-code/torneo-de-celulares/main/background-img/city-tecnology.jpg");
     /* background-size: cover; */
     backdrop-filter: blur(5px);
@@ -15,7 +15,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    padding: 60px 0px 30px 0px;
+    padding: 120px 0px 30px 0px;
 }
 
 /* Estilo para las imagenes grandes */
@@ -26,17 +26,19 @@ body{
 
 /* Div que encierra las imagenes pequeñas */
 .small-images{
+    margin: auto;
+    max-width: 90vw;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(15, 1fr);
     row-gap: 10px;
-    margin-left: 3.5vw;
-    padding-bottom: 41px;
+    column-gap: 10px;
+    text-align: center;
 }
 
 /* Imagenes pequeñas */
 .small-images img{
-    max-width: 60%;
-    aspect-ratio: 4/5;
+    max-width: 100%;
+    /* aspect-ratio: 4/4; */
 }
 
 .small-images img:active{

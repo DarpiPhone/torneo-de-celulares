@@ -13,15 +13,42 @@ body{
 /* Div que encierra las dos imagenes grandes */
 .large-images{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    padding: 11vh 0 4vh 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 13vh 0 0 0;
 }
 
+.large-images .img1{
+    grid-column-start: -6;
+    grid-column-end: 3;
+    text-align: right;
+}
+.large-images .button-start{
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 5vw;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+}
+.large-images .button-start:hover{
+    text-shadow: 5px 5px 10px #ffffff;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.large-images .img2{
+    grid-column-start: 4;
+    grid-column-end: -1;
+    text-align: left;
+}
+
+
 /* Estilo para las imagenes grandes */
-.large-images img{
-    min-width: 35%;
-    /* aspect-ratio: 4/6; */
+.large-images div img{
+    min-width: 40%;
+    max-width: 100%;
+    /* aspect-ratio: 9/16; */
+    /* filter: blur(10px); */
 }
 
 /* Div que encierra las imagenes pequeñas */
@@ -41,5 +68,21 @@ body{
 }
 
 .small-images img:active{
-    outline: 10px solid red;
+    outline: 10px solid #84029e;
+}
+
+.selected-phone{
+    outline: 4px solid #ffe600;
+    box-shadow: 0px 0px 20px 20px #000000;
+}
+.selected-phone2{
+    outline: 4px solid #ff0000;
+    box-shadow: 0px 0px 20px 20px #000000;
+}
+
+.name-smartphone{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2vw;
+    font-weight: bold;
 }
